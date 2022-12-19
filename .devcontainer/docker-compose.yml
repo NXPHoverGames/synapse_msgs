@@ -1,0 +1,27 @@
+volumes:
+    # remembers ignition config, downloaded models etc
+    ignition_config:
+
+services:
+
+  # gazebo ignition (simulator)
+  synapse:
+    build: .
+    tty: true
+    stdin_open: true
+    environment:
+      - DISPLAY=${DISPLAY}
+      - IGN_GAZEBO_SYSTEM_PLUGIN_PATH=/usr/lib
+    volumes:
+      - /tmp/.X11-unix:/tmp/.X11-unix:ro
+      - ignition_config:/home/docker/.ignition:rw
+      - $PWD/.devcontainer/ws:/home/docker/ws:rw
+      - $PWD:/home/docker/ws/src/synapse_msgs:rw
+    privileged: true
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 1
+              capabilities: [gpu]
