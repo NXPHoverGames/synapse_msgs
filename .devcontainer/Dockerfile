@@ -10,9 +10,10 @@ RUN apt-get update && apt-get -y --quiet --no-install-recommends install \
   bash-completion \
   ros-humble-rmw-cyclonedds-cpp \
   ros-humble-cyclonedds \
-  python3-pip \
+  python3-antlr4 \
+  python3-jinja2 \
   && apt-get -y autoremove \
-	&& apt-get clean
+  && apt-get clean
 
 # setup user
 RUN groupadd -r -g 110 render \

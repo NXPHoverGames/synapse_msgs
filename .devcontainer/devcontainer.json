@@ -45,7 +45,8 @@
 			"ms-vscode.cpptools-themes",
 			"trond-snekvik.devicetree",
 			"ms-python.python",
-			"eamodio.gitlens"
+			"eamodio.gitlens",
+			"mike-lischke.vscode-antlr4"
 			]
 		}
 	  }
