@@ -1,7 +1,5 @@
 std_msgs/Header header
 int32 sequence
-bool recompute
-bool is_bezier
 
 float64 time_start
 float64 time_end
