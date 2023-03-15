@@ -12,6 +12,7 @@ find_package(std_msgs REQUIRED)
 
 set(msg_files
   "msg/BezierTrajectory.msg"
+  "msg/Actuators.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
