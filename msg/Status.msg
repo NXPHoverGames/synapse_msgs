@@ -36,5 +36,5 @@ uint8 mode
 uint8 safety
 uint8 synapse
 string status_message
-float fuel_percentage
-float power
+uint8 fuel_percentage
+float32 power
