@@ -13,10 +13,7 @@ find_package(std_msgs REQUIRED)
 set(msg_files
   "msg/BezierCurve.msg"
   "msg/BezierTrajectory.msg"
-  "msg/FSM.msg"
-  "msg/LED.msg"
-  "msg/LEDArray.msg"
-  "msg/Safety.msg"
+  "msg/Status.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
