@@ -38,3 +38,5 @@ uint8 synapse
 string status_message
 uint8 fuel_percentage
 float32 power
+uint32 request_seq
+bool request_rejected
