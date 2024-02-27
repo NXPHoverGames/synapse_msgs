@@ -14,6 +14,7 @@ set(msg_files
   "msg/BezierCurve.msg"
   "msg/BezierTrajectory.msg"
   "msg/Status.msg"
+  "msg/PixyVector.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
