@@ -17,6 +17,7 @@ set(msg_files
   "msg/Status.msg"
   "msg/EdgeVectors.msg"
   "msg/TrafficStatus.msg"
+  "msg/PixyVector.msg"
 )
 rosidl_generate_interfaces(${PROJECT_NAME}
   ${msg_files}
