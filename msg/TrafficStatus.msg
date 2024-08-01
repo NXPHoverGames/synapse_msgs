@@ -1,4 +1,5 @@
 bool stop_sign
+bool start_sign
 
 uint8 GREEN_LIGHT = 0
 uint8 YELLOW_LIGHT = 1
